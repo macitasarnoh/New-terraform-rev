@@ -1,6 +1,7 @@
 resource "aws_s3_bucket" "data-team-bucket" {
   bucket = var.bucket-name2
   acl    = "private"
+  region ec2  user
 
   server_side_encryption_configuration {
     rule {
